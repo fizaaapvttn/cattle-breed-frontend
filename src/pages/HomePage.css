@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+.home { text-align: center; }
+
+/* ── Hero ── */
+.hero {
+  padding: 116px 32px 96px;      /* was 96px 24px 80px */
+  background: linear-gradient(148deg, #051221 0%, #0d2a48 48%, #0a3828 100%);
+  color: white; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 22% 65%, rgba(16,185,129,0.13) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 80% 30%, rgba(255,255,255,0.035) 0%, transparent 50%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+.hero h1 {
+  font-family: 'Lora', serif;
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);  /* was clamp(2.4rem,5vw,3.6rem) */
+  font-weight: 700; margin-bottom: 22px;
+  line-height: 1.1; letter-spacing: -0.6px;
+}
+.hero p {
+  font-size: 19px;               /* was 16px */
+  line-height: 1.78; opacity: 0.86; max-width: 600px; margin: 0 auto;
+}
+.hero-buttons {
+  margin-top: 44px;              /* was 36px */
+  display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white; padding: 17px 38px;   /* was 14px 30px */
+  border-radius: 14px; text-decoration: none;
+  font-weight: 700; font-size: 17px;  /* was 15px */
+  box-shadow: 0 10px 32px rgba(16,185,129,0.40);
+  transition: all .25s ease; display: inline-block; letter-spacing: 0.2px;
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 42px rgba(16,185,129,0.50); }
+
+.btn-secondary {
+  background: rgba(255,255,255,0.10);
+  color: white; padding: 17px 38px; border-radius: 14px;
+  text-decoration: none; font-weight: 600; font-size: 17px;
+  border: 1.5px solid rgba(255,255,255,0.26);
+  backdrop-filter: blur(8px); transition: all .25s ease; display: inline-block;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.19); transform: translateY(-3px); }
+
+/* Features */
+.features {
+  display: flex; justify-content: center;
+  gap: 28px; padding: 84px 32px;   /* was 72px 28px */
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, #f0f6fb 0%, #e8f4ff 100%);
+}
+.feature-card {
+  width: 310px;                  /* was 276px */
+  background: linear-gradient(158deg, #ffffff 0%, #f4f9ff 100%);
+  padding: 36px 30px;            /* was 30px 26px */
+  border-radius: 22px; box-shadow: 0 8px 32px rgba(7,26,47,0.08);
+  border: 1px solid rgba(255,255,255,0.9);
+  transition: all .3s ease; position: relative; overflow: hidden; text-align: left;
+}
+.feature-card::before {
+  content: ""; position: absolute; top:0; left:0; right:0; height:5px;
+  background: linear-gradient(90deg, #10b981, #0ea5e9);
+  transform: scaleX(0); transform-origin:left; transition: transform .3s ease;
+}
+.feature-card:hover { transform: translateY(-9px); box-shadow: 0 28px 62px rgba(7,26,47,0.12); }
+.feature-card:hover::before { transform: scaleX(1); }
+.feature-icon {
+  width: 58px; height: 58px;    /* was 48×48 */
+  background: linear-gradient(135deg,#ecfdf5,#d1fae5);
+  border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  font-size: 26px;               /* was 22px */
+  margin-bottom: 20px; box-shadow: 0 3px 12px rgba(16,185,129,0.17);
+}
+.feature-card h3 {
+  font-size: 19px;               /* was 16px */
+  font-weight: 700; color: #061526; margin-bottom: 10px;
+}
+.feature-card p { font-size: 16px; color: #2d4059; line-height: 1.70; }  /* was 14px */
+
+/* About */
+.about {
+  padding: 84px 32px; max-width: 840px; margin: 0 auto; text-align: left;
+}
+.about h2 {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);  /* was clamp(1.6rem,3.5vw,2.2rem) */
+  font-weight: 700; color: #061526; margin-bottom: 24px; letter-spacing: -0.3px;
+}
+.about p { font-size: 17.5px; line-height: 1.82; color: #2d4059; margin-bottom: 18px; }  /* was 15.5px */
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #051221, #0d2a48);
+  color: rgba(255,255,255,0.68);
+  padding: 36px 28px;            /* was 28px 24px */
+  font-size: 16px; text-align: center;  /* was 14px */
+}
