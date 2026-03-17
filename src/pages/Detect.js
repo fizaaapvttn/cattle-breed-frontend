@@ -9,7 +9,7 @@ export default function Detect(props) {
   const [cameraType, setCameraType] = useState("environment");
 
   const startCamera = async (type) => {
-    setCameraType(type);
+    /*setCameraType(type);*/
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: type } });
     props.videoRef.current.srcObject = stream;
     props.videoRef.current.play();
