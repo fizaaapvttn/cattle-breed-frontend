@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { LangContext, T } from "../App";
 
+
 export default function Detect(props) {
   const { lang } = useContext(LangContext);
   const t = T[lang];
