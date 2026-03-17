@@ -7,7 +7,7 @@ import Detect from "./pages/Detect";
 import OpeningScreen from "./pages/OpeningScreen";
 import Health from "./pages/Health";
 import AppreciationWall from "./pages/AppreciationWall";
-//import cattleBg from "./assets/cattle-bg.jpg";
+/*import cattleBg from "./assets/cattle-bg.jpg";*/
 
 /* ─────────────────────────────────────────────
    LANGUAGE CONTEXT
